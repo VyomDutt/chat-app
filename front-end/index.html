@@ -46,13 +46,13 @@
             }
    
             function getMessages(){
-                $.get('http://localhost:3000/messages', (data) => {
+                $.get('http://vyom-chat.herokuapp.com/messages', (data) => {
                 data.forEach(addMessages);
                 })
             }
  
             function sendMessage(message){
-                $.post('http://localhost:3000/messages', message)
+                $.post('http://vyom-chat.herokuapp.com/', message)
             }
         </script>
 
